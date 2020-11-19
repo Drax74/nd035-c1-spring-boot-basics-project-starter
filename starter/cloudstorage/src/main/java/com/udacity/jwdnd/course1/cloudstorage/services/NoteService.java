@@ -20,6 +20,7 @@ public class NoteService {
     }
 
     public int createNote(Note note, Integer userid) {
-        return noteMapper.insert(new Note(null, note.getNotetitle(), note.getNotedescription(), userid));
+        note.setUserid(userid);
+        return noteMapper.insert(note);
     }
 }

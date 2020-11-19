@@ -9,10 +9,10 @@ import java.util.List;
 
 @Mapper
 public interface NoteMapper {
-    @Select("SELECT * FROM FILES WHERE userid = #{userid}")
+    @Select("SELECT * FROM NOTES WHERE userid = #{userid}")
     List<Note> getNotes(Integer userid);
 
-    @Insert("INSERT INTO CREDENTIALS (notetitle, notedescription, userid) VALUES(#{filename}, #{notetitle}, #{notedescription}, #{userid})")
+    @Insert("INSERT INTO NOTES (notetitle, notedescription, userid) VALUES(#{filename}, #{notetitle}, #{notedescription}, #{userid})")
     @Options(useGeneratedKeys = true, keyProperty = "noteid")
     int insert(Note note);
 }

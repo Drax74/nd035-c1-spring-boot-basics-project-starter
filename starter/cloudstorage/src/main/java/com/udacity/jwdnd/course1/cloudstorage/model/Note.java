@@ -6,18 +6,11 @@ public class Note {
     private String notedescription;
     private Integer userid;
 
-    public Note(Integer noteid, String notetitle, String notedescription, Integer userid) {
-        this.noteid = noteid;
-        this.notetitle = notetitle;
-        this.notedescription = notedescription;
-        this.userid = userid;
-    }
-
     public Integer getNoteid() {
         return noteid;
     }
 
-    public void setNoteid(Integer fileId) {
+    public void setNoteid(Integer noteid) {
         this.noteid = noteid;
     }
 
@@ -25,7 +18,7 @@ public class Note {
         return notetitle;
     }
 
-    public void setNotetitle(String filename) {
+    public void setNotetitle(String notetitle) {
         this.notetitle = notetitle;
     }
 
