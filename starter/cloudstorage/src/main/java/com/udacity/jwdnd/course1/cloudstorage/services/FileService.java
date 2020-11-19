@@ -24,4 +24,8 @@ public class FileService {
 
         return fileMapper.insert(new File(null, filename, contenttype, filesize, filedata, userId));
     }
+
+    public File getByUsername(String filename) {
+        return fileMapper.getByUsername(filename);
+    }
 }

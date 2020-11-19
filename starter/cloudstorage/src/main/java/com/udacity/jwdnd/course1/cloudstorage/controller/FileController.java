@@ -29,6 +29,13 @@ public class FileController {
             model.addAttribute("message","No file selected to upload!");
             return "home";
         }
+
+        if(fileService.getByUsername(fileUpload.getOriginalFilename()) != null) {
+            model.addAttribute("success",false);
+            model.addAttribute("message","File with that name already exists");
+            return "home";
+        }
+
         User user = this.userService.getUser(authentication.getName());
         Integer userId = user.getUserId();
         fileService.createFile(fileUpload, userId);
