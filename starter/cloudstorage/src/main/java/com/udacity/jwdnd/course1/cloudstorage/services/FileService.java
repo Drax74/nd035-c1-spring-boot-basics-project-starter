@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 
 @Service
 public class FileService {
@@ -25,7 +26,7 @@ public class FileService {
         return fileMapper.insert(new File(null, filename, contenttype, filesize, filedata, userId));
     }
 
-    public File getByUsername(String filename) {
-        return fileMapper.getByUsername(filename);
+    public List<File> getByFilename(String filename, Integer userid) {
+        return fileMapper.getByUsername(filename, userid);
     }
 }

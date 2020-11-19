@@ -30,14 +30,15 @@ public class FileController {
             return "home";
         }
 
-        if(fileService.getByUsername(fileUpload.getOriginalFilename()) != null) {
+        User user = this.userService.getUser(authentication.getName());
+        Integer userId = user.getUserId();
+
+        if(fileService.getByFilename(fileUpload.getOriginalFilename(), userId) != null) {
             model.addAttribute("success",false);
             model.addAttribute("message","File with that name already exists");
             return "home";
         }
 
-        User user = this.userService.getUser(authentication.getName());
-        Integer userId = user.getUserId();
         fileService.createFile(fileUpload, userId);
         model.addAttribute("success",true);
         model.addAttribute("message","New File added successfully!");
