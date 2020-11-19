@@ -23,10 +23,14 @@ public class FileService {
         Long filesize = file.getSize();
         byte[] filedata = file.getBytes();
 
-        return fileMapper.insert(new File(null, filename, contenttype, filesize, filedata, userId));
+        return fileMapper.insert(new File(null, filename, contenttype, filesize, userId, filedata));
     }
 
-    public List<File> getByFilename(String filename, Integer userid) {
-        return fileMapper.getByUsername(filename, userid);
+    public Boolean filenameExists(String filename, Integer userid) {
+        return !fileMapper.getByUsername(filename, userid).isEmpty();
+    }
+
+    public List<File> getFiles(Integer userid) {
+        return fileMapper.getFiles(userid);
     }
 }

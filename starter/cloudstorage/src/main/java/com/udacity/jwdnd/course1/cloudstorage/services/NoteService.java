@@ -18,4 +18,8 @@ public class NoteService {
     public List<Note> getNotes(Integer userId) {
         return noteMapper.getNotes(userId);
     }
+
+    public int createNote(Note note, Integer userid) {
+        return noteMapper.insert(new Note(null, note.getNotetitle(), note.getNotedescription(), userid));
+    }
 }

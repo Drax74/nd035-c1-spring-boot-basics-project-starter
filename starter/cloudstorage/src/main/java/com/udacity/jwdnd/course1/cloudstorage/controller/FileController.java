@@ -33,7 +33,7 @@ public class FileController {
         User user = this.userService.getUser(authentication.getName());
         Integer userId = user.getUserId();
 
-        if(fileService.getByFilename(fileUpload.getOriginalFilename(), userId) != null) {
+        if(fileService.filenameExists(fileUpload.getOriginalFilename(), userId)) {
             model.addAttribute("success",false);
             model.addAttribute("message","File with that name already exists");
             return "home";
@@ -42,6 +42,6 @@ public class FileController {
         fileService.createFile(fileUpload, userId);
         model.addAttribute("success",true);
         model.addAttribute("message","New File added successfully!");
-        return "home";
+        return "redirect:/home";
     }
 }

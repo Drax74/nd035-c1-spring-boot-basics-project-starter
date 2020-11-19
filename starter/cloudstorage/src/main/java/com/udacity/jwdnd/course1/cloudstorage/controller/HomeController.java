@@ -34,7 +34,7 @@ public class HomeController {
 
         model.addAttribute("credentials", this.credentialService.getCredentials(userId));
         model.addAttribute("notes", this.noteService.getNotes(userId));
-        //model.addAttribute("files", this.fileService.getFiles(userId));
+        model.addAttribute("files", this.fileService.getFiles(userId));
         return "home";
     }
 }
