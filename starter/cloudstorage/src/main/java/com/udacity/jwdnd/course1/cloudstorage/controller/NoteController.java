@@ -10,7 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import java.io.IOException;
 
 @Controller
 public class NoteController {
@@ -23,12 +22,19 @@ public class NoteController {
     }
 
     @PostMapping("/notes")
-    public String postNote(@ModelAttribute Note noteForm, Authentication authentication, Model model) throws IOException {
+    public String postNote(@ModelAttribute Note noteForm, Authentication authentication, Model model) {
         User user = this.userService.getUser(authentication.getName());
         Integer userid = user.getUserId();
-        noteService.createNote(noteForm, userid);
-        model.addAttribute("success",true);
-        model.addAttribute("message","New note added successfully!");
-        return "result";
+
+        try {
+            noteService.createNote(noteForm, userid);
+            model.addAttribute("success",true);
+            model.addAttribute("message","New note added!");
+        } catch (Exception e) {
+            model.addAttribute("error",true);
+            model.addAttribute("message","System error!" + e.getMessage());
+        }
+
+        return "redirect:/result";
     }
 }

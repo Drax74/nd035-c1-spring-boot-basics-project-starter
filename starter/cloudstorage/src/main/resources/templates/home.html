@@ -85,11 +85,12 @@
                                     </tr>
                                     <tr th:each="note: ${notes}" class="note-elements">
                                         <td>
-                                            <button type="button" class="btn btn-success">Edit</button>
+                                            <button type="button" class="btn btn-success"
+                                                    th:onclick="showNoteModal([[${note.noteid}]], [[${note.notetitle}]], [[${note.notedescription}]])">Edit</button>
                                             <a class="btn btn-danger">Delete</a>
                                         </td>
-                                        <th scope="row" th:text="${note.noteTitle}" />
-                                        <td th:text="${note.noteDescription}" />
+                                        <th scope="row" th:text="${note.notetitle}" />
+                                        <td th:text="${note.notedescription}" />
                                     </tr>
                                 </tbody>
                             </table>
@@ -200,6 +201,10 @@
 
         <!--For opening the note modal-->
         <script type="text/javascript">
+            // For opening specific tab
+            const anchor = window.location.hash;
+            $(`a[href="${anchor}"]`).tab('show');
+
             // For opening the note modal
             function showNoteModal(noteId, noteTitle, noteDescription) {
                 $('#note-id').val(noteId ? noteId : '');
