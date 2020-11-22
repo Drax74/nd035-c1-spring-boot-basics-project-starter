@@ -78,7 +78,7 @@
                                         <th style="width: 60%" scope="col">Description</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="notes-table-body">
                                     <tr th:each="note: ${notes}" class="note-elements">
                                         <td>
                                             <button id="editNoteButton" type="button" class="btn btn-success"
@@ -141,7 +141,7 @@
                                         <th style="width: 25%" scope="col">Password</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="credential-table-body">
                                 <tr th:each="credential: ${credentials}" class="credential-elements">
                                     <td>
                                         <button id="editCredentialButton" type="button" class="btn btn-success"

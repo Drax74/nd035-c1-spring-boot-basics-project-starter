@@ -29,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/CloudStorageApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="119" column="32" lean-forward="true" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
+            <state relative-caret-position="-365">
+              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,44 +44,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/CredentialPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+            <state relative-caret-position="430">
+              <caret line="89" column="9" lean-forward="true" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2041#2042#0" expanded="true" />
                 <element signature="e#2114#2115#0" expanded="true" />
                 <element signature="e#2276#2277#0" expanded="true" />
                 <element signature="e#2339#2340#0" expanded="true" />
-                <element signature="e#2587#2588#0" expanded="true" />
-                <element signature="e#2633#2634#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/ResultPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/NotePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+            <state relative-caret-position="460">
+              <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1330#1331#0" expanded="true" />
@@ -96,8 +76,18 @@
                 <element signature="e#2048#2049#0" expanded="true" />
                 <element signature="e#2009#2010#0" expanded="true" />
                 <element signature="e#2072#2073#0" expanded="true" />
-                <element signature="e#2110#2111#0" expanded="true" />
-                <element signature="e#2191#2192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,8 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/main/resources/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="93" column="40" lean-forward="true" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+            <state relative-caret-position="1247">
+              <caret line="155" column="63" selection-start-line="155" selection-start-column="44" selection-end-line="155" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -225,10 +215,10 @@
         <option value="$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/LoginPage.java" />
         <option value="$PROJECT_DIR$/starter/cloudstorage/src/main/resources/templates/result.html" />
         <option value="$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/ResultPage.java" />
-        <option value="$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/NotePage.java" />
         <option value="$PROJECT_DIR$/starter/cloudstorage/src/main/resources/templates/home.html" />
-        <option value="$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/CredentialPage.java" />
         <option value="$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/CloudStorageApplicationTests.java" />
+        <option value="$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/CredentialPage.java" />
+        <option value="$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/NotePage.java" />
       </list>
     </option>
   </component>
@@ -430,7 +420,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CloudStorageApplicationTests">
+  <component name="RunManager" selected="Spring Boot.CloudStorageApplication">
     <configuration default="true" type="GoAppEngineRunConfiguration" factoryName="Go App Engine">
       <module name="Udacity-Java-Spring-CloudStorage" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -556,9 +546,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CloudStorageApplicationTests" />
+        <item itemvalue="JUnit.CloudStorageApplicationTests.deleteNoteTest" />
         <item itemvalue="JUnit.CloudStorageApplicationTests.editCredentialTest" />
         <item itemvalue="JUnit.CloudStorageApplicationTests.createCredentialTest" />
-        <item itemvalue="JUnit.CloudStorageApplicationTests.deleteNoteTest" />
         <item itemvalue="JUnit.CloudStorageApplicationTests.editNoteTest" />
       </list>
     </recent_temporary>
@@ -578,39 +568,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CloudStorageApplicationTests_createNoteTest - 2020.11.22 at 16h 22m 11s.xml">
-      <configuration name="CloudStorageApplicationTests.createNoteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CloudStorageApplicationTests_editNoteTest - 2020.11.22 at 16h 23m 05s.xml">
-      <configuration name="CloudStorageApplicationTests.editNoteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CloudStorageApplicationTests_editNoteTest - 2020.11.22 at 16h 23m 43s.xml">
-      <configuration name="CloudStorageApplicationTests.editNoteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CloudStorageApplicationTests_deleteNoteTest - 2020.11.22 at 16h 33m 44s.xml">
-      <configuration name="CloudStorageApplicationTests.deleteNoteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CloudStorageApplicationTests_createCredentialTest - 2020.11.22 at 16h 40m 57s.xml">
-      <configuration name="CloudStorageApplicationTests.createCredentialTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CloudStorageApplicationTests_createCredentialTest - 2020.11.22 at 16h 41m 33s.xml">
-      <configuration name="CloudStorageApplicationTests.createCredentialTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CloudStorageApplicationTests_editCredentialTest - 2020.11.22 at 16h 42m 31s.xml">
-      <configuration name="CloudStorageApplicationTests.editCredentialTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CloudStorageApplicationTests_editCredentialTest - 2020.11.22 at 16h 45m 17s.xml">
-      <configuration name="CloudStorageApplicationTests.editCredentialTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CloudStorageApplicationTests - 2020.11.22 at 16h 46m 58s.xml">
       <configuration name="CloudStorageApplicationTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CloudStorageApplicationTests - 2020.11.22 at 16h 50m 08s.xml">
       <configuration name="CloudStorageApplicationTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CloudStorageApplicationTests - 2020.11.22 at 16h 54m 56s.xml">
+      <configuration name="CloudStorageApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CloudStorageApplicationTests_deleteNoteTest - 2020.11.22 at 17h 43m 23s.xml">
+      <configuration name="CloudStorageApplicationTests.deleteNoteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CloudStorageApplicationTests_deleteNoteTest - 2020.11.22 at 17h 44m 52s.xml">
+      <configuration name="CloudStorageApplicationTests.deleteNoteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CloudStorageApplicationTests_deleteNoteTest - 2020.11.22 at 17h 46m 29s.xml">
+      <configuration name="CloudStorageApplicationTests.deleteNoteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CloudStorageApplicationTests - 2020.11.22 at 17h 52m 08s.xml">
+      <configuration name="CloudStorageApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CloudStorageApplicationTests - 2020.11.22 at 17h 58m 05s.xml">
+      <configuration name="CloudStorageApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CloudStorageApplicationTests - 2020.11.22 at 18h 00m 11s.xml">
+      <configuration name="CloudStorageApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CloudStorageApplicationTests - 2020.11.22 at 18h 02m 26s.xml">
+      <configuration name="CloudStorageApplicationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57042000" />
+    <option name="totallyTimeSpent" value="60011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -626,8 +616,8 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39916405" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39916405" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -978,18 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/main/java/com/udacity/jwdnd/course1/cloudstorage/CloudStorageApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1053,26 +1031,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/main/java/com/udacity/jwdnd/course1/cloudstorage/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1247">
+          <caret line="155" column="63" selection-start-line="155" selection-start-column="44" selection-end-line="155" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/CloudStorageApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-365">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/CredentialPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        <state relative-caret-position="430">
+          <caret line="89" column="9" lean-forward="true" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2041#2042#0" expanded="true" />
             <element signature="e#2114#2115#0" expanded="true" />
             <element signature="e#2276#2277#0" expanded="true" />
             <element signature="e#2339#2340#0" expanded="true" />
-            <element signature="e#2587#2588#0" expanded="true" />
-            <element signature="e#2633#2634#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/NotePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+        <state relative-caret-position="460">
+          <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1330#1331#0" expanded="true" />
@@ -1087,40 +1105,6 @@
             <element signature="e#2048#2049#0" expanded="true" />
             <element signature="e#2009#2010#0" expanded="true" />
             <element signature="e#2072#2073#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-            <element signature="e#2191#2192#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/main/java/com/udacity/jwdnd/course1/cloudstorage/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="93" column="40" lean-forward="true" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/starter/cloudstorage/src/test/java/com/udacity/jwdnd/course1/cloudstorage/CloudStorageApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="119" column="32" lean-forward="true" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

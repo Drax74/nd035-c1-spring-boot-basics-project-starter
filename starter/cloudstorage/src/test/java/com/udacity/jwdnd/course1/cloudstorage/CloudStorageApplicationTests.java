@@ -122,7 +122,7 @@ class CloudStorageApplicationTests {
 		Assertions.assertEquals("Note deleted!", resultPage.getSuccessMessage());
 		driver.get("http://localhost:" + this.port + "/home");
 		notePage.openNoteTabJS();
-		Assertions.assertEquals(false, notePage.noteElementsExist());
+		Assertions.assertEquals(false, notePage.hasRows());
 	}
 
 	public void createCredentials(CredentialPage credentialPage, String url, String username, String password) {
@@ -179,6 +179,6 @@ class CloudStorageApplicationTests {
 		Assertions.assertEquals("Credentials deleted!", resultPage.getSuccessMessage());
 		driver.get("http://localhost:" + this.port + "/home");
 		credentialPage.openCredentialTab();
-		Assertions.assertEquals(false, credentialPage.credentialElementsExist());
+		Assertions.assertEquals(false, credentialPage.hasRows());
 	}
 }

@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.By;
 import java.util.List;
+import org.openqa.selenium.NoSuchElementException;
 
 public class NotePage {
 
@@ -22,8 +24,8 @@ public class NotePage {
     @FindBy(css = "#table-noteTitle")
     private WebElement tableNoteTitle;
 
-    @FindBy(css = ".note-elements")
-    private List<WebElement> noteElements;
+    @FindBy(css = "#notes-table-body")
+    private WebElement notesTable;
 
     @FindBy(css = "#note-description")
     private WebElement noteDescriptionField;
@@ -76,7 +78,17 @@ public class NotePage {
         return tableNoteTitle.getAttribute("innerHTML");
     }
 
-    public Boolean noteElementsExist() {
-        return noteElements.size() > 0;
+    public Boolean hasRows() {
+        List<WebElement> notesList = notesTable.findElements(By.tagName("td"));
+        try {
+            for (int i = 0; i < notesList.size(); i++) {
+                WebElement element = notesList.get(i);
+                element.findElement(By.id("table-noteTitle"));
+            }
+        } catch(NoSuchElementException e) {
+            return false;
+        }
+
+        return true;
     }
 }

@@ -1,8 +1,6 @@
 package com.udacity.jwdnd.course1.cloudstorage;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,8 +21,8 @@ public class CredentialPage {
     @FindBy(css = "#table-credentialUrl")
     private WebElement tableCredentialUrl;
 
-    @FindBy(css = ".credential-elements")
-    private List<WebElement> credentialElements;
+    @FindBy(css = "#credential-table-body")
+    private WebElement credentialsTable;
 
     @FindBy(css = "#credential-username")
     private WebElement credentialUsernameField;
@@ -80,7 +78,17 @@ public class CredentialPage {
         return tableCredentialUrl.getAttribute("innerHTML");
     }
 
-    public Boolean credentialElementsExist() {
-        return credentialElements.size() > 0;
+    public Boolean hasRows() {
+        List<WebElement> notesList = credentialsTable.findElements(By.tagName("td"));
+        try {
+            for (int i = 0; i < notesList.size(); i++) {
+                WebElement element = notesList.get(i);
+                element.findElement(By.id("table-credentialUrl"));
+            }
+        } catch(NoSuchElementException e) {
+            return false;
+        }
+
+        return true;
     }
 }
