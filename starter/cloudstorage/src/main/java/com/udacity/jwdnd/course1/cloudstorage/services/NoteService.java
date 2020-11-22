@@ -19,8 +19,18 @@ public class NoteService {
         return noteMapper.getNotes(userId);
     }
 
-    public int createNote(Note note, Integer userid) {
+    public int createOrUpdateNote(Note note, Integer userid, Integer noteid) {
         note.setUserid(userid);
+
+        if(noteid != null) {
+            return noteMapper.update(note);
+        }
+
         return noteMapper.insert(note);
+    }
+
+    public int deleteNote(Note note, Integer userid) {
+        note.setUserid(userid);
+        return noteMapper.delete(note);
     }
 }

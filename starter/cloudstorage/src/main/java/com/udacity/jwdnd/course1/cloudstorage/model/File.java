@@ -8,15 +8,6 @@ public class File {
     private byte[] filedata;
     private Integer userid;
 
-    public File(Integer fileId, String filename, String contenttype, Long filesize, Integer userid, byte[] filedata) {
-        this.fileId = fileId;
-        this.filename = filename;
-        this.contenttype = contenttype;
-        this.filesize = filesize;
-        this.filedata = filedata;
-        this.userid = userid;
-    }
-
     public Integer getFileId() {
         return fileId;
     }

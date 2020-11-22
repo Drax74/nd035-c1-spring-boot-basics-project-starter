@@ -17,13 +17,15 @@ public class FileService {
         this.fileMapper = fileMapper;
     }
 
-    public int createFile(MultipartFile file, Integer userId) throws IOException {
-        String filename = file.getOriginalFilename();
-        String contenttype = file.getContentType();
-        Long filesize = file.getSize();
-        byte[] filedata = file.getBytes();
+    public int createFile(MultipartFile uploadedFile, Integer userId) throws IOException {
+        File file = new File();
+        file.setFilename(uploadedFile.getOriginalFilename());
+        file.setContenttype(uploadedFile.getContentType());
+        file.setFilesize(uploadedFile.getSize());
+        file.setFiledata(uploadedFile.getBytes());
+        file.setUserid(userId);
 
-        return fileMapper.insert(new File(null, filename, contenttype, filesize, userId, filedata));
+        return fileMapper.insert(file);
     }
 
     public Boolean filenameExists(String filename, Integer userid) {
@@ -32,5 +34,14 @@ public class FileService {
 
     public List<File> getFiles(Integer userid) {
         return fileMapper.getFiles(userid);
+    }
+
+    public File findById(Integer fileId) {
+        return fileMapper.getFileById(fileId);
+    }
+
+    public int deleteFile(File file, Integer userid) {
+        file.setUserid(userid);
+        return fileMapper.delete(file);
     }
 }

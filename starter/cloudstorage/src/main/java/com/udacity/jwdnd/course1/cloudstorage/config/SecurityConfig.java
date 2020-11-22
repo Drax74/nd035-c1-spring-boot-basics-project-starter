@@ -35,6 +35,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.formLogin()
                 .defaultSuccessUrl("/home", true);
+
+        http.logout().logoutSuccessUrl("/login").permitAll();
     }
 
     @Override
@@ -42,6 +44,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         web.ignoring()
                 .antMatchers("/h2-console/**");
     }
-
-
 }

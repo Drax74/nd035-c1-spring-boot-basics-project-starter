@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class NoteController {
@@ -22,19 +22,38 @@ public class NoteController {
     }
 
     @PostMapping("/notes")
-    public String postNote(@ModelAttribute Note noteForm, Authentication authentication, Model model) {
+    public ModelAndView postNote(@ModelAttribute Note noteForm, Authentication authentication, Model model) {
         User user = this.userService.getUser(authentication.getName());
         Integer userid = user.getUserId();
 
         try {
-            noteService.createNote(noteForm, userid);
+            Integer noteid = noteForm.getNoteid();
+            noteService.createOrUpdateNote(noteForm, userid, noteid);
             model.addAttribute("success",true);
-            model.addAttribute("message","New note added!");
+            String message = noteid != null ? "Note updated!" : "New note added!";
+            model.addAttribute("message", message);
         } catch (Exception e) {
             model.addAttribute("error",true);
             model.addAttribute("message","System error!" + e.getMessage());
         }
 
-        return "redirect:/result";
+        return new ModelAndView("result");
+    }
+
+    @PostMapping("/notes/delete")
+    public ModelAndView deleteNote(@ModelAttribute Note noteDelete, Authentication authentication, Model model) {
+        User user = this.userService.getUser(authentication.getName());
+        Integer userid = user.getUserId();
+
+        try {
+            noteService.deleteNote(noteDelete, userid);
+            model.addAttribute("success",true);
+            model.addAttribute("message", "Note deleted!");
+        } catch (Exception e) {
+            model.addAttribute("error",true);
+            model.addAttribute("message","System error!" + e.getMessage());
+        }
+
+        return new ModelAndView("result");
     }
 }
